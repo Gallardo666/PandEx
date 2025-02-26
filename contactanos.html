@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulario de contacto para PandEx">
+    <title>Contactanos - PandEx</title>
+    <link rel="icon" href="Images/IconoPanda.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="Images/LogoOsoPanda.png" title="Logo Oso Panda" alt="Logo Oso Panda YinYang">
+        <div class="tituloheader">
+            <h1>PandEx</h1>
+            <i><p>Contáctanos para más información</p></i>
+        </div>
+    </header>
+    
+    <nav class="navbar">
+        <div class="nav-links"> 
+            <div class="dropdown">
+                <a href="index.html">Inicio</a>
+            </div>
+            <div class="dropdown">
+                <a href="#">Contáctanos</a>
+            </div>
+        </div>
+    </nav>
+
+    <div id="contenidocontacto" class="content">
+        <div class="contact-form-container">
+            <h2>Formulario de Contacto</h2>
+            <form action="https://formspree.io/f/mzzdlqga" method="POST">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required><br>
+            
+                <label for="email">Correo:</label>
+                <input type="email" id="email" name="email" required><br>
+            
+                <label for="phone">Número de Teléfono:</label>
+                <input type="tel" id="phone" name="phone" required><br>
+            
+                <label for="message">Mensaje:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+            
+                <input type="submit" value="Enviar">
+            </form>            
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 PandEx - Todos los derechos reservados.</p>
+            <div class="social-media">
+                <a href="https://www.facebook.com" target="_blank" title="Facebook">
+                    <i class="fab fa-facebook-f social-icon"></i>
+                </a>
+                <a href="https://www.instagram.com" target="_blank" title="Instagram">
+                    <i class="fab fa-instagram social-icon"></i>
+                </a>
+                <a href="https://twitter.com" target="_blank" title="Twitter">
+                    <i class="fab fa-twitter social-icon"></i>
+                </a>
+                <a href="https://www.linkedin.com" target="_blank" title="LinkedIn">
+                    <i class="fab fa-linkedin-in social-icon"></i>
+                </a>
+            </div>
+            <div class="more-info">
+                <label for="info-toggle" class="info-link">Más Información</label> | 
+                <a href="#contenidocontacto">Contáctanos</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
